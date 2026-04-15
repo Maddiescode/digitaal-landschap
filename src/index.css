@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #FAFBFC;
+  --color-card: #FFFFFF;
+  --color-text-primary: #1a1a2e;
+  --color-text-secondary: #6b7280;
+  --color-border: #e5e7eb;
+  --color-border-light: #f3f4f6;
+
+  --color-segment-1: #86efac;
+  --color-segment-2: #67e8f9;
+  --color-segment-3: #93c5fd;
+  --color-segment-4: #818cf8;
+  --color-segment-5: #6366f1;
+
+  --color-segment-1-light: #f0fdf4;
+  --color-segment-2-light: #ecfeff;
+  --color-segment-3-light: #eff6ff;
+  --color-segment-4-light: #eef2ff;
+  --color-segment-5-light: #e8e8ff;
+
+  --color-ai-accent: #f59e0b;
+  --color-ai-bg: #fffbeb;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.editable-field {
+  cursor: text;
+  border-radius: 4px;
+  padding: 2px 4px;
+  margin: -2px -4px;
+  transition: background-color 0.15s;
+}
+.editable-field:hover {
+  background-color: #f3f4f6;
+}
+.editable-field:focus {
+  outline: none;
+  background-color: #eff6ff;
+  box-shadow: 0 0 0 2px #93c5fd;
+}
